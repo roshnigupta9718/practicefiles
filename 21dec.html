@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.nav{
+    display:flex;
+justify-content: flex-end;
+}
+.background{background-image:url(data:image/jpeg;base64,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) ;
+
+background-repeat:no-repeat ;
+background-size: 100% 100%;
+padding:48px 0px;}
+
+.nav>div{
+    margin:10px;
+h1{text-align: center;}
+h2{text-align: center;}
+}
+.button{text-align: center;
+    display:flex;
+justify-content: center;}
+button:hover{background-color:grey;}
+.photo{display:flex;
+flex-wrap:wrap;
+margin:0px 0px 0px 300px;}
+.photo>div{
+height:300px;
+width:400px;
+padding:48px 32px;
+
+}
+.center{text-align: center;}
+
+    
+    </style>
+</head>
+<body>
+    <div  class="background">
+        <div class="nav">
+    <div>home</div>
+    <div>watch video</div>
+    <div><label for="">demo pages</label>
+        <select name="" id="">
+            <option value="">creative agency</option>
+            <option value="">travel agency</option>
+           </select>
+    
+    </div>
+    <div> <label for="">blocks</label>
+    <select name="" id="">
+        <option value="">menu pages</option>
+        <option value="">header</option>
+        <option value="">images</option>
+        <option value="">features</option>
+        <option value="">article</option>
+    </select></div>
+    <div><button style="background-color:skyblue">buys now</button></div>
+        </div>
+       
+        <div class="center"> <h1 >travel with us</h1>
+            <h2 >Explore the world in any direction</h2>
+        
+            <div class="button">
+                <div><button>buy now</button></div>
+                <div><button>ways to travel</button></div>
+            </div>
+           
+        </div></div>
+    <h1>Our Journal</h1>
+    <div class="photo"> 
+        
+            <div>Lorem ipsum dolor sit amet consectetur.</div>
+            <div><img src="https://mobirise.com/extensions/businessm4/travel-agency/assets/images/khatam-tadayon-107740-1200x796.jpg" alt=""height=300px; width="330px"></div>
+            <div>Lorem ipsum dolor sit amet consectetur.</div>
+        
+        
+            <div><img src="https://mobirise.com/extensions/businessm4/travel-agency/assets/images/luca-bravo-121931-unsplash-1200x800.jpg" alt=""height=300px; width=300px;></div>
+            <div>Lorem ipsum dolor sit amet consectetur.</div>
+            <div><img src="https://mobirise.com/extensions/businessm4/travel-agency/assets/images/sho-hatakeyama-117306-unsplash-1200x800.jpg" alt=""height=300px; width=300px;></div>
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-direction{
+            width:150px;
+            display:flex;
+            background-color: black;
+            flex-direction: row-reverse;
+            
+        }
+        h1{
+            border:2px solid blue;
+        background:blue;
+        margin:10px;
+        
+    }
+    .flex-directioncolumn{
+        background-color:black;
+        margin:10px;
+        width:50px;
+
+        display:flex;
+        flex-direction: column;
+
+    }
+    .flex-directioncolumnreverse 
+    {
+        display:flex;
+    flex-direction:column-reverse;
+     margin:15px;
+}
+    </style>
+</head>
+<body>
+    <div class="flex-direction">
+        <h1>1</h1>
+        <h1>2</h1>
+        <h1>3</h1>
+        <h1>4</h1>
+    </div>
+    <div class="flex-directioncolumn">
+        <h1>1</h1>
+        <h1>2</h1>
+        <h1>3</h1>
+        <h1>4</h1>
+        <div class="flex-directioncolumnreverse">
+            <h1>1</h1>
+            <h1>2</h1>
+            <h1>3</h1>
+            <h1>4</h1>
+    </div>
+</body>
+</html>
